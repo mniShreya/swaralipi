@@ -1,0 +1,7 @@
+{
+  "name": "Swaralipi AI - Heritage Digitization",
+  "description": "An AI-driven platform for automated detection and digitization of Devanagari Swaras from classical Indian music notation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

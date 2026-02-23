@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-heritage-cream: #f5f2ed;
+  --color-heritage-ink: #1a1a1a;
+  --color-heritage-gold: #c5a059;
+  --color-heritage-paper: #fdfbf7;
+}
+
+@layer base {
+  body {
+    @apply bg-heritage-cream text-heritage-ink font-sans antialiased;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl shadow-sm;
+}
+
+.swara-card {
+  @apply p-4 bg-heritage-paper border border-heritage-ink/5 rounded-xl shadow-sm transition-all hover:shadow-md hover:border-heritage-gold/30;
+}
+
+.scan-line {
+  @apply absolute left-0 w-full h-1 bg-heritage-gold/50 shadow-[0_0_15px_rgba(197,160,89,0.5)] z-10;
+}
